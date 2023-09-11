@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block title %}
+	Geodents
+{% endblock %}
+
+{% block content %}
+	<main class="app">
+		<section class="n1">
+			<div class="cta">
+				<h3>we are making off campus accomodation easier, faster and cheaper!</h3>
+					<center><strong>Subscribe to get more info on when we lunch</strong></center>
+					<i class="fa fa-arrow-down"></i>
+				<form action="/subscribe" method="post" class="sub-form">
+					{% csrf_token %}
+					<input type="email" name="email" placeholder="enter your email" required>
+					<button type="submit">Subscribe</button>
+				</form>
+			</div>
+		</section>
+		<section class="n2">
+			<div class="half">
+				<article>
+					<h2>What We do?</h2>
+					<p>We take on most of the burden of securing accommodation by consolidating several available rental properties into an easy-to-use platform, giving students the luxury of choice and flexibility, peace of mind, and convenience.</p>
+					<p>Easy.Fast.Reliable.Cheap</p>
+					<a href="{% url 'about' %}">Learn more...</a> 
+				</article>
+			</div>
+			<div class="half">
+				<img class="full" src="{% static '/images/mates.jpg' %}" alt="" />
+			</div>
+		</section>
+	</main>
+{% endblock %}

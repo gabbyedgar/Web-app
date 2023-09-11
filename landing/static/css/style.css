@@ -1,0 +1,163 @@
+*{box-sizing: border-box;}
+html{
+	font-family: courrier;
+	font-size: 25px;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.full{
+	width: 100%;
+	height: 100%;
+}
+.half{
+	width: 50%;
+	height: 100%;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: whitesmoke;
+}
+.logo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 8px;
+	align-items: center;
+}
+.logo img{
+	width: 80px;
+	height: 60px;
+	/* margin-right:12em; */
+}
+.small {
+	font-family: 'lucida Sans';
+	font-size: 12px;
+	/* margin-right: 21em; */
+}
+.reg-btn{
+	background-color: #000;
+	color: #fff;
+	border-radius: 10px;
+	padding: 2px;
+}
+.n1{
+	display: block;
+	height: 650px;
+	background-image: url("../images/b-house.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #ccc;
+}
+.cta{
+	position: relative;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #000;
+	text-shadow: 1px 1px 1px #fff;
+}
+.n2{
+	display: flex;
+	align-items: center;
+	font-family: new Times-Roman;
+	font-style: italic;
+	background-color: gold;
+	padding: 15px;
+	color: black;
+}
+footer{
+	background-color: #212121;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+.copy{
+	font-family: sans-serif;
+	font-size: 15px;
+}
+@media(max-width: 800px){
+	.n2{
+		display: block;
+	}
+	.half{
+		width: 100%;
+	}
+}
+.w-m{
+	background-image: url("../images/s-house.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+.w-m h1{
+	margin: 0;
+	padding: 0;
+}
+.list{
+	width: 400px;
+}
+.list li{
+	color: rgb(22, 5, 116);
+	list-style-type: bullet;
+}
+.sub-form{
+	display: flex;
+	flex-direction: column;
+}
+.sub-form input[type="email"]{
+	padding: 20px;
+	padding-inline-start: 10px;
+	background-color: #fff;
+	width: 350px;
+	border: 1px solid #eee;
+	outline: 0;
+	border-radius: 20px;
+	font-size: 17px;
+}
+.sub-form button{
+	border-radius: 10px;
+	background-color: #000;
+	border: 0;
+	font-size: 20px;
+	color: #fff;
+	width: 150px;
+	padding: 10px;
+	margin-top: 10px;
+}
+.main{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.sec{
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-size: 17px;
+	margin: 0 15px;
+}
+
+@media(max-width: 800px) {
+	.main{
+		width: 100%;
+		margin: 0;
+	}
+}

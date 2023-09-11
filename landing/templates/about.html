@@ -1,0 +1,67 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block title %}
+	About geodants
+{% endblock %}
+
+{% block content %}
+
+    <main class="main">
+        <img src="{% static 'images/network.svg' %}" height="600px" width="500px">
+        <div class="w-m">
+            <p>A two-sided marketplace, GEO connects University students with in-state landlords, consequently providing them access to nearby open properties and accommodation options.</p>
+            
+            <div class="list">
+                <h5>Some of the Services we offer are: </h5>
+                <u1>
+                    <li>Easy Accommodation</li>
+                    <p><em>We make accommodation easily accessible to university students. We believe there is already a lot of pressure on them and would like to assist them to have one less thing to worry about.</em></p>
+                    <li>We connect Landlords to students</li>
+                    <p><em>Landlords provide the properties, and we provide the demand. We give them a channel through which they can more effectively create awareness for their available properties and also get the opportunity to filter the demand and make a choice.</em></p>
+                    <li>Get A Room mate</li>
+                    <p><em>We connect you with potential roommates and provide a platform where student can sublet their room for a short period of time.</em></p>
+                </u1>
+            </div>
+            <!--<img src="./images/s-house.jpg" class="full" alt="geo housing" />-->
+        </div>
+        <div>
+            <p>With us, you can be sure of:</p>
+            <div class="sec">
+                <div class="card">
+                    <img src="{% static 'images/bestprice.svg' %}" height="170px" width="160px">
+                    <h4>Lowest price & best deals, guaranteed!</h4>
+                    <p>Get the lowest prices, plus Geo exclusive offers that guarantee a sweet deal on every booking</p>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/Services.svg' %}" height="170px" width="160px">
+                    <h5>Flexible is fun</h5>
+                    <p>Changed your mind? We don’t mind. Cancel or modify your booking easily within a specific time frame</p>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/instantbooking.svg' %}" height="170px" width="160px">
+                    <h5>Smart and easy</h5>
+                    <p>Our online interface makes it easy for you to safely and easily browse, book, and pay online for the spaces that make you go😍, with just a few clicks.</p>
+                </div>
+            </div>
+            <div class="sec">
+                <div class="card">
+                    <img src="{% static 'images/student.svg' %}" height="170px" width="160px">
+                    <h5>Real people, real time</h5>
+                    <p>Our easy system lets you do everything on your own. However, if you need any help, our Personal Student Advisors (who are real people, not bots!) are there to help you. From the day you start looking, until the day you move out, we offer 24x7 support.</p>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/Rentfee.svg' %}" height="170px" width="160px">
+                    <h5>The rent, the whole rent, and nothing but the rent</h5>
+                    <p>No extra fees - the rent is all you pay.</p>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/all.svg' %}" height="170px" width="160px">
+                    <h5>All. The. Choices.</h5>
+                    <p>With many student rooms, we have something to suit every preference. shared apartments, shared rooms - we’ve got them all.</p>
+                </div>
+            </div>
+         </div>
+    </main>
+{% endblock %}

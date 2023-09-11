@@ -1,0 +1,8 @@
+#environment variable
+.env
+
+#sqlite database
+db.sqlite3
+
+#collectstatic dir
+productionfiles/

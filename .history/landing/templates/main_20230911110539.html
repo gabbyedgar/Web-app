@@ -1,0 +1,45 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Housing and accomation made easy" />
+	<link rel="stylesheet" href="{% static '/css/style.css' %}" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="{% url 'home' %}"><img class="full" src="{% static '/images/logo.png' %}" alt="geo logo" /></a>
+                <span class="small"><em>...Soft Life Aktivated!</em></span>
+            </div>
+        </div>
+    </header>
+
+	{% block content %}
+	
+	{% endblock %}
+
+	<footer>
+		<div class="">
+			<span>Follow Us On</span>
+			<div class="">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+			</div>
+		</div>
+		<span class="copy">Geo &copy; <span id="year"></span></span>
+	</footer>
+	
+	<script>
+		document.getElementById("year").innerHTML = new Date().getFullYear();
+	</script>
+
+</div>
+
+</html>
